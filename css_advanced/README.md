@@ -16,7 +16,6 @@ To view the website, follow these steps:
 1. Visit the repository:
 https://github.com/evan-gelista7/alx_html_css
 2. Open the `index.html` file in your browser.
-
 ## Technologies Used
 
 - HTML
