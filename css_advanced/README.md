@@ -20,8 +20,3 @@ https://github.com/evan-gelista7/alx_html_css
 
 - HTML
 - CSS
-
-
-## License
-
-This project is licensed under the MIT License.
