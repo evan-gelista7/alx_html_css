@@ -1,0 +1,251 @@
+body {
+    font-family: source sans pro, sans-serif;
+    background-image: url(assets/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    transition: o.4s;
+    cursor: pointer;
+}
+a:hover {
+    color: #FF6565;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.landing {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.landing h1 {
+    margin: 0px;
+    font-size: 32px;
+    color: #fff;
+}
+
+.landing p {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.follow_up p {
+    margin: 0px;
+    text-align: center;
+    margin-top: 60px;
+    color: #fff;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 162px;
+    height: 44px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #FF6565;
+    color: #fff;
+    border: none;
+    margin-top: 40px;
+    box-shadow: 2px 2px 5px 1px #000000b9;
+    transition: o.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ffffffd0;
+    background-color: #ff6565d2;
+}
+
+/* Hide the checkbox (menu toggle) */
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: none; /* Hide the hamburger on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Hamburger bars */
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* White lines for the hamburger icon */
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.what_we_do {
+    margin-top: 216px;
+    margin-bottom: 110px;
+}
+
+.what_we_do h2 {
+    font-size: 32px;
+    font-weight:500;
+    text-align: center;
+}
+
+.what_we_do p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.holberton_school-icon-ic_sound,
+.holberton_school-icon-ic_music,
+.holberton_school-icon-ic_hearing,
+.holberton_school-icon-ic_video {
+    font-size: 64px;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.icons {
+    text-align: center;
+    
+}
+
+.icons h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.icon_holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 111px;
+    margin-bottom: 110px;
+}
+
+/* Media query for small screens (480px or smaller) */
+@media only screen and (max-width: 480px) {
+
+    /* Adjust header to align hamburger and logo */
+    header {
+        display: flex;
+        justify-content: center; /* Center the header elements */
+        align-items: center;
+        padding: 20px 10%;
+        position: relative;
+    }
+
+    header img {
+        height: 50px;
+        width: auto;
+        align-items: center;
+    }
+
+    /* Show the hamburger icon on small screens */
+    .hamburger {
+        display: flex;
+        position: absolute;
+        left: 10%; /* Move hamburger to the left */
+        top: 30px; /* Keep it aligned with the logo */
+        margin-right: 20px;
+    }
+
+    /* Ensure the logo stays in the center */
+    a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Hide the nav menu by default on small screens */
+    nav {
+        display: none;
+    }
+
+    /* Toggle the nav menu when the checkbox is checked */
+    #menu-toggle:checked + label + nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0; /* Start the dropdown menu from the left */
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    /* Center the nav links */
+    .nav_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Menu items are centered vertically with padding */
+    .nav_links li {
+        margin: 10px 0;
+    }
+
+    .nav_links a {
+        font-size: 12px;
+    }
+
+    /* Center the landing content */
+    .landing {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    /* Icons section stacked vertically */
+    .icon_holder {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .icons {
+        margin-bottom: 30px;
+    }
+
+    /* Optional: Hamburger animation to "X" when active */
+    #menu-toggle:checked + label .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #menu-toggle:checked + label .hamburger span:nth-child(2) {
+        opacity: 0; /* Hide the middle line */
+    }
+
+    #menu-toggle:checked + label .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
